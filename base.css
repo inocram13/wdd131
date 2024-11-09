@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EFF2f1;
+    color: #020202;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+nav {
+    background-color: #004d80;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9b8d57;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(45% - 40px);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .content-container p1 {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.card .content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .p2-container {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+
+
+.card img:first-of-type {
+    max-width: 100%;
+    width: 150px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Second image style */
+.card img:last-of-type {
+    max-width: 100%;
+    width: 150px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-right: 20px;
+}
+
+.card .p2-container p1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card h2,
+.card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #003366;
+    background-color: #8bebcb;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+footer span {
+    font-weight: bold;
+    color: #ddcf97;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .card img {
+        width: 80%;
+    }
+
+    .card .content-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card .content-container .p2-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card ul li{
+        padding: 10px;
+        size: 50px;
+    }
+}

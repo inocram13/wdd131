@@ -41,22 +41,22 @@ nav ul li a {
     color: #FFF;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 00.3s ease;
 }
 
 nav ul li a:hover {
     color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    
+    background-color:#003366;
 }
 
 main {
+    width: 100%;
     padding: 20px;
 }
 
 .card-container {
     display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;

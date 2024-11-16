@@ -1,84 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root {
+    --primary-color: #4a6fa1;
+    --secondary-color: #f9f9f9;
+    --text-color: black;
+    --hover-color: white;
+    --font-family: 'Poetsen', sans-serif;
+    --font-size-small: 1rem;
+    --font-size-large: 1.5rem;
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    font-family: 'Poetsen', sans-serif;
-    background-color: #f9f9f9;
-    color: black;
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
-header,footer {
+
+header, footer {
     max-width: 100%;
     margin: 1rem auto;
     padding: 20px;
-    background-color: #4a6fa1;
+    background-color: var(--primary-color);
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #4a6fa1;
+    background-color: var(--primary-color);
 }
-footer,main{
+
+footer, main {
     text-align: center;
     padding: 20px;
 }
-h1{
+
+h1 {
     margin-bottom: 0;
-    text-align: left;    
+    text-align: left;
 }
-nav{
+
+nav {
     text-align: right;
-    background-color: #4a6fa1;
+    background-color: var(--primary-color);
 }
+
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
 }
+
 .navigation li {
-	display: none;
+    display: none;
 }
+
 .navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(var(--font-size-small), 2vmin, var(--font-size-large));
 }
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
+
+.navigation a:hover, .navigation a:active {
+    color: var(--hover-color);
+    background-color: black;
 }
 
 .show li {
-	display: block;
+    display: block;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
 }
+
 @media only screen and (min-width: 40em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	#menu {
-		display: none;
-	}
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
 }
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -86,32 +112,37 @@ nav{
     padding: 10px;
     margin: 20px;
 }
+
 figcaption {
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color);
     padding: 10px;
     font-size: 1em;
     font-weight: bold;
 }
-figure img{
+
+figure img {
     width: 100%;
     height: auto;
 }
+
 nav a {
-    color: white;
+    color: var(--hover-color);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
+
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	color: #000;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: var(--text-color);
 }
+
 #menu::before {
-	content: "≡";
+    content: "≡";
 }
 #menu {
     display: none;

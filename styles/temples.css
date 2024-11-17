@@ -33,8 +33,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: var(--primary-color);
 }
 
 footer, main {
@@ -48,29 +46,49 @@ h1 {
 }
 
 nav {
-    text-align: right;
-    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    color: var(--secondary-color);
 }
 
 .navigation {
+    display: none;
+    flex-direction: column;
     list-style: none;
-    margin: 0 auto;
-    max-width: 760px;
+    margin: 0;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.navigation.show {
+    display: flex;
 }
 
 .navigation li {
-    display: none;
+    display: block;
 }
 
 .navigation a {
     display: block;
     padding: 0.75rem;
-    text-align: left;
     text-decoration: none;
     color: var(--text-color);
     font-weight: 700;
-    transition: 0.5s;
     font-size: clamp(var(--font-size-small), 2vmin, var(--font-size-large));
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 .navigation a:hover, .navigation a:active {
@@ -78,30 +96,27 @@ nav {
     background-color: black;
 }
 
-.show li {
-    display: block;
-}
-
-#menu.show::before {
-    content: "X";
-}
-
-@media only screen and (min-width: 40em) {
-    .navigation {
-        display: flex;
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
     }
 
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        background: none;
+        padding: 0;
     }
 
     .navigation a {
-        text-align: center;
+        color: var(--hover-color);
+        padding: 0.5rem 1rem;
     }
 
-    #menu {
-        display: none;
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
     }
 }
 
@@ -123,27 +138,4 @@ figcaption {
 figure img {
     width: 100%;
     height: auto;
-}
-
-nav a {
-    color: var(--hover-color);
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-    color: var(--text-color);
-}
-
-#menu::before {
-    content: "≡";
-}
-#menu {
-    display: none;
 }

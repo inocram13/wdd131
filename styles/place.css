@@ -1,3 +1,8 @@
+/* Reset box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: royalblue;
     --secondary-color: rgb(226, 27, 27);
@@ -14,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    font-size: 16px;
 }
 
 h1, h2 {
@@ -53,8 +59,13 @@ section .weather + picture {
 
 section .weather + picture img {
     width: 100%;
-    max-width: 100px;
+    max-width: 60px;
     height: auto;
+}
+
+.weather picture img {
+    width: 100px; /* Set a fixed width for the icon */
+    height: auto; /* Set the height to maintain aspect ratio */
 }
 
 @media (max-width: 768px) {
@@ -98,6 +109,7 @@ section .weather + picture img {
     max-width: 600px;
     margin: 2rem auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, font-size 0.3s ease;
 }
 
 .weather h2 {
@@ -178,5 +190,11 @@ footer p {
 
     footer p {
         padding: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .weather p {
+        font-size: 1rem;
     }
 }

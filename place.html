@@ -19,63 +19,65 @@
         <h1>Philippines</h1>
     </header>
     <main>
-        <div class="hero">
+        <section class="hero">
             <picture>
                 <source srcset="images/Philippines-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/Philippines-medium.webp" media="(min-width: 500px)">
                 <img src="images/Philippines-small.webp" alt="Philippines Bacolod Temple" width="500" height="250">
             </picture>
-            <section>
-                <h2 class="data">Data</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Area:</th>
-                            <td>300,000 sq km</td>
-                        </tr>
-                        <tr>
-                            <th>Population:</th>
-                            <td>118,200,000</td>
-                        </tr>
-                        <tr>
-                            <th>Capital:</th>
-                            <td>Manila</td>
-                        </tr>
-                        <tr>
-                            <th>Languages:</th>
-                            <td>Tagalog, Cebuano, Ilokano, English</td>
-                        </tr>
-                        <tr>
-                            <th>Currency:</th>
-                            <td>Philippine Peso</td>
-                        </tr>
-                        <tr>
-                            <th>Time Zone:</th>
-                            <td>UTC+8</td>
-                        </tr>
-                        <tr>
-                            <th>Calling Code:</th>
-                            <td>+639</td>
-                        </tr>
-                        <tr>
-                            <th>Internet TLD:</th>
-                            <td>.ph</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section>
-                <h2 class="weather">Weather</h2>
-                <picture>
-                    <source srcset="images/weather2.svg" media="(max-width: 769px)"> 
-                    <img src="images/weather2.svg" alt="Weather Icon2">
-                </picture>
-                <p>Temperature: <span id="temperature">--</span> °F</p>
-                <p>Condition: <span id="condition">--</span></p>
-                <p>Wind Speed: 10 mph</p>
-                <p class="windchill">Wind Chill: Calculating...</p>
-            </section>
-        </div>
+            <div class="info">
+                <section class="data">
+                    <h2>Data</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Area:</th>
+                                <td>300,000 sq km</td>
+                            </tr>
+                            <tr>
+                                <th>Population:</th>
+                                <td>118,200,000</td>
+                            </tr>
+                            <tr>
+                                <th>Capital:</th>
+                                <td>Manila</td>
+                            </tr>
+                            <tr>
+                                <th>Languages:</th>
+                                <td>Tagalog, Cebuano, Ilokano, English</td>
+                            </tr>
+                            <tr>
+                                <th>Currency:</th>
+                                <td>Philippine Peso</td>
+                            </tr>
+                            <tr>
+                                <th>Time Zone:</th>
+                                <td>UTC+8</td>
+                            </tr>
+                            <tr>
+                                <th>Calling Code:</th>
+                                <td>+639</td>
+                            </tr>
+                            <tr>
+                                <th>Internet TLD:</th>
+                                <td>.ph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <picture>
+                        <source srcset="images/weather2.svg" media="(max-width: 769px)"> 
+                        <img src="images/weather2.svg" alt="Weather Icon2">
+                    </picture>
+                    <p>Temperature: <span id="temperature">--</span> °F</p>
+                    <p>Condition: <span id="condition">--</span></p>
+                    <p>Wind Speed: 10 mph</p>
+                    <p class="windchill">Wind Chill: Calculating...</p>
+                </section>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 😎Kieth Marconi Acosta😎 | Philippines</p>

@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 :root {
-    --primary-color: #4a6fa1;
+    --primary-color: #27496d;
     --secondary-color: #f9f9f9;
-    --text-color: black;
-    --hover-color: white;
-    --font-family: 'Poetsen', sans-serif;
-    --font-size-small: 1rem;
-    --font-size-large: 1.5rem;
+    --text-color: #333333;
+    --hover-color: #f9f9f9;
+    --hover-bg-color: #6b9fcf;
 }
 
 * {
@@ -17,9 +15,9 @@
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    font-family: 'Poetsen',sans-serif;
+    background-color: #f9f9f9;
+    color: black;
 }
 
 header, footer {
@@ -93,7 +91,7 @@ nav {
 
 .navigation a:hover, .navigation a:active {
     color: var(--hover-color);
-    background-color: black;
+    background-color: var(--hover-bg-color);
 }
 
 @media (min-width: 768px) {

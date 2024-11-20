@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+  font-family: Roboto, helvetica, sans-serif;
+  margin: 1rem;
+  }
+  
+  header,
+  main,
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  
+  div.banner {
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: rgb(230, 243, 254);
+    font-weight: 700;
+       word-break: break-word;
+      text-align: center;
+  }
+  
+  h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 1.5rem;
+  }
+  
+  section {
+      padding: 1rem;
+  }
+  
+  h2 {
+    color: navy;
+    grid-column: 1/3;
+  }
+  
+  h3 {
+    margin-bottom: .5rem;
+  }
+  
+  
+  .callout {
+    border:1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    background-color: #eee;
+    grid-column: 1/3;
+    padding: 1rem;
+  }
+  
+  footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem 0;
+    font-size: smaller;
+  }
+  /*pseudo*/
+  * {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	width: 760px;
+	background-color: #eee;
+}
+
+.datatable {
+	width: 200px;
+	margin-top: 2rem;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	align-items: center;
+	text-align: center;
+}
+
+.col {
+	padding: 10px;
+}
+/* 1. Set up a CSS variable for the border in the :root pseudo-class */
+:root {
+    --border: 1px solid #777;
+  }
+  
+  /* 2. Style anchor tags for visited and active links */
+  a:visited, 
+  a:active {
+    color: navy;
+  }
+  
+  /* 3. Style anchor tags on hover */
+  a:hover {
+    color: purple;
+  }
+  
+  /* 4. Style the table with borders for div.datatable and its cells */
+  div.datatable {
+    display: table;
+    border-collapse: collapse; /* Ensures no double borders */
+    border: var(--border); /* Use CSS variable */
+  }
+  
+  div.row {
+    display: table-row;
+  }
+  
+  div.col {
+    display: table-cell;
+    border: var(--border); /* Use CSS variable for consistent borders */
+    padding: 10px;
+  }
+  
+  /* 5. Style the last row of the table */
+  div.datatable div.row:last-child {
+    background-color: #555; /* Darker gray */
+    color: white; /* Optional: For better contrast */
+  }
+
+
+  
+  /* General Styles */
+body {
+  font-family: 'Poetsen One', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+/* Hero Image Styling */
+.hero picture img {
+  width: 100%;
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: auto;
+}
+
+/* Data Section */
+section.data {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section.data table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Weather Section */
+.weather {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.weather picture {
+  margin-bottom: 1rem;
+}
+
+.weather p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.weather span {
+  font-weight: bold;
+}
+
+/* Responsive Media Query for Mobile */
+@media (max-width: 768px) {
+  .weather picture img {
+      max-width: 80px;
+  }
+}

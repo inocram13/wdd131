@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kieth Marconi Acosta</title>
+    <meta name="description" content="Author: Kieth Marconi Acosta, WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kieth Marconi Acosta">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Philippines-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/Philippines-medium.webp" media="(min-width: 500px)">
+                <img src="images/Philippines-small.webp" alt="Philippines Bacolod Temple" width="500px" height="250px">
+            </picture>
+            <section>
+                <h2 class="data">Data</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Area:</th>
+                            <td>300,000 sq km</td>
+                        </tr>
+                        <tr>
+                            <th>Population:</th>
+                            <td>118,200,000</td>
+                        </tr>
+                        <tr>
+                            <th>Capital:</th>
+                            <td>Manila</td>
+                        </tr>
+                        <tr>
+                            <th>Languages:</th>
+                            <td>Tagalog, Cebuano, Ilokano, English</td>
+                        </tr>
+                        <tr>
+                            <th>Currency:</th>
+                            <td>Philippine Peso</td>
+                        </tr>
+                        <tr>
+                            <th>Time Zone:</th>
+                            <td>UTC+8</td>
+                        </tr>
+                        <tr>
+                            <th>Calling Code:</th>
+                            <td>+639</td>
+                        </tr>
+                        <tr>
+                            <th>Internet TLD:</th>
+                            <td>.ph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2 class="weather">Weather</h2>
+                <picture>
+                    <source srcset="images/weather2.svg" media="(max-width: 769px)"> 
+                    <img src="images/weather2.svg" alt="Weather Icon2">
+                </picture>
+                <p>Temperature: <span id="temperature">--</span> °F</p>
+                <p>Condition: <span id="condition">--</span></p>
+                <p>Wind Speed: 10 mph</p>
+                <p class="windchill">Wind Chill: Calculating...</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 😎Kieth Marconi Acosta😎 | Philippines</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

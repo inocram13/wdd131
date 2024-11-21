@@ -232,7 +232,7 @@ footer p {
     margin: 1rem 0;         
     padding: 1rem;
     color: red;
-    background-color: gray transparent;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     text-align: center;       

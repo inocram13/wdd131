@@ -1,11 +1,11 @@
-/* Reset box-sizing for all elements */
+
 * {
   box-sizing: border-box;
 }
 
 :root {
   --primary-color: royalblue;
-  --secondary-color:red;
+  --secondary-color:rgb(228, 47, 47);
   --highlight-color: rgb(239, 243, 8);
   --background-color: #f9f9f9;
   --text-color: #333;
@@ -65,7 +65,7 @@ h1 {
   }
 }
 
-/* Hero Image */
+
 .hero img {
   width: 100%;
   height: auto;
@@ -93,7 +93,7 @@ section .weather + picture img {
   height: auto;
 }
 
-/* Data and Weather Sections */
+
 .data, .weather {
   position: absolute;
   transform: translateY(-50%);
@@ -108,7 +108,7 @@ section .weather + picture img {
 .data {
   top: 30%;
   left: 5%;
-  color: red;
+  color: rgb(228, 47, 47);
   background: rgba(253, 253, 253, 0.7);
   text-align: left;
 }
@@ -120,7 +120,7 @@ body {
 .weather {
   bottom: 5%;
   right: 1%;
-  color: red;
+  color: rgb(228, 47, 47);
   background: rgba(253, 253, 253, 0.7);
   text-align: left;
 }
@@ -151,7 +151,7 @@ body {
   }
 }
 
-/* Headings and Text */
+
 .data h2, .weather h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -160,9 +160,10 @@ body {
 .data p, .weather p {
   margin: 0.3rem 0;
   font-size: 1rem;
+  color: royalblue;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1000px) {
   .data, .weather {
       width: 30%;
@@ -182,7 +183,7 @@ body {
   }
 }
 
-/* Footer */
+
 footer p {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
@@ -212,11 +213,11 @@ footer p {
   }
 }
 @media (max-width: 768px) {
-  /* Ensure hero image and text are aligned properly */
+ 
   .hero {
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: center;     /* Center all child elements horizontally */
+    flex-direction: column;  
+    align-items: center;     
     justify-content: center;
     width: 100%;
   }
@@ -226,17 +227,21 @@ footer p {
     object-fit: cover;
   }
   .data, .weather {
-    width: 100%;              /* Ensure sections take full width */
-    margin: 1rem 0;           /* Space between data and weather sections */
+    width: 100%;              
+    margin: 1rem 0;         
     padding: 1rem;
     color: red;
+    background-color: gray transparent;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;       /* Center the content inside data and weather */
+    text-align: center;       
   }
 }
 @media (max-width: 768px) {
   h2{
   background-color:transparent  ;
   }
+}
+td,tr{
+  color: royalblue;
 }

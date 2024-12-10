@@ -11,7 +11,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -36,6 +36,11 @@ main {
 label {
     margin-top: 15px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 select, input, textarea {
@@ -51,15 +56,23 @@ textarea {
     resize: vertical;
 }
 
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 fieldset {
-    margin-top: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left; /* Ensures consistent alignment inside */
 }
 
 legend {
+    font-size: 1.1rem;
     font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .btn-submit {
@@ -72,18 +85,23 @@ legend {
     border-radius: 4px;
     font-size: 16px;
     text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: #8B2635;
+    background-color: #7a1f2f;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
-    color: #777;
+    background-color: #8B2635;
+    color: wheat;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
 }
+
 .rating-fieldset {
     margin-top: 15px;
     border: 1px solid #ccc;
@@ -105,12 +123,4 @@ footer {
 
 .rating-options input {
     margin-right: 5px;
-}
-footer{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    background-color: #8B2635;
-    color: wheat;
-    font-family: 'Open Sans', sans-serif;
 }

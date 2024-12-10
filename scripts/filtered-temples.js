@@ -208,3 +208,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial load of all temples (Home view)
     filterAndDisplayTemples("Home");
 });
+
+document.getElementById('accept').addEventListener('click', () => {
+    document.cookie = "consent=true; SameSite=Lax; Secure";
+    document.getElementById('consent-modal').style.display = 'none';
+});

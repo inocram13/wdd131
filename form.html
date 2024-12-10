@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Form Manager</h1>
+  </header>
+  
+  <main>
+    <section id="form-section">
+      <h2>Create a New Form</h2>
+      <form id="dynamic-form">
+        <label for="form-title">Form Title:</label>
+        <input type="text" id="form-title" placeholder="Enter form title" required><br>
+
+        <div id="fields-container">
+          <!-- Dynamic fields will be added here -->
+        </div>
+
+        <button type="button" id="add-field-btn">Add Field</button><br>
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+    
+    <section id="submitted-forms">
+      <h2>Submitted Forms</h2>
+      <ul id="form-list">
+        <!-- Submitted forms will be displayed here -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

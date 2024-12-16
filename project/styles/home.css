@@ -1,0 +1,314 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Container */
+.header-container {
+    background-color: #2E3532; /* A warm orange-red for the header background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.header-container .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Description Paragraph */
+.header-container p {
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Navigation Menu */
+.header-container nav {
+    margin-top: 20px;
+}
+
+.header-container .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-container .nav-links li {
+    display: inline;
+}
+
+.header-container .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.header-container .nav-links a:hover {
+    background-color: #fff;
+    color: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: linear-gradient(to right, #FF9F45, #FFD194);
+    color: white;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .btn {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-text .btn:hover {
+    background-color: #FF9F45;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* About Section Styling */
+.about {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Popular Recipes Section Styling */
+.recipes-preview {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.recipes-preview h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.recipe-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.recipe-card .btn-small {
+    padding: 0.5rem 1rem;
+    background-color: #FF9F45;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recipe-card .btn-small:hover {
+    background-color: #333;
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 0.5rem 1rem;
+    background-color: #FF9F45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2E3A46;
+    color: aliceblue;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #2E3532;
+    }
+    
+    .logo {
+        font-size: 2rem;
+        color: #E0E2DB;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #E0E2DB;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #8B2635;
+    }
+}
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+#recipe-search {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    color: #555;
+    padding: 0 10px;
+}
+

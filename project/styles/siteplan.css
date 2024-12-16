@@ -80,15 +80,11 @@ main {
     margin: 0 auto;
 }
 
-main section {
-    margin-bottom: 2rem;
-}
-
 main section h2 {
     font-size: 1.8rem;
     color: #8B2635;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left; /* Align to the left */
     font-family: 'Kanit', sans-serif; /* Use Kanit for subheadings */
 }
 
@@ -96,7 +92,7 @@ main section p {
     font-size: 1.1rem;
     font-family: 'Merriweather', serif; /* Elegant body text */
     margin-bottom: 1rem;
-    text-align: justify;
+    text-align: justify; /* Justify text in main section */
 }
 
 /* Footer Styling (Optional) */
@@ -132,5 +128,147 @@ footer {
 
     main section h2 {
         font-size: 1.5rem;
+    }
+}
+
+/* Purpose Section Styling */
+.purpose {
+    display: flex;
+    align-items: left; /* Vertically align items */
+    justify-content: space-between; /* Add space between the elements */
+    margin: 20px;
+    gap: 20px; /* Add spacing between columns */
+}
+
+.purpose-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.purpose-text {
+    flex: 1; /* Make text take remaining space */
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px; /* Limit width for readability */
+    text-align: justify; /* Make text look nice */
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .purpose {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .purpose-image img {
+        width: 100%; /* Ensure the image fits the container */
+    }
+}
+
+/* Styling for h3 */
+h3 {
+    text-align: left; /* Align to the left instead of right */
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* Article paragraph text */
+article p {
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+}
+/* Purpose Section Styling */
+.purpose {
+    display: flex;
+    align-items: flex-start; /* Vertically align items */
+    justify-content: flex-start; /* Align to the left */
+    margin: 20px;
+    gap: 20px; /* Add spacing between columns */
+}
+
+.purpose-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.purpose-text {
+    flex: 1; /* Make text take remaining space */
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px; /* Limit width for readability */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .purpose {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .purpose-image img {
+        width: 100%; /* Ensure the image fits the container */
+    }
+
+    .scenarios {
+        flex-direction: column;
+    }
+}
+h2{
+    text-align: left; /* Align to the left instead of right */
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+}
+.scenarios-container{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.scenarios{
+   flex: 1 1 calc(45% - 40px);
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+.purpose {
+    display: flex;
+    align-items: flex-start; /* Vertically align items */
+    justify-content: flex-start; /* Align to the left */
+    margin: 20px;
+    gap: 20px; /* Add spacing between columns */
+}
+
+.recipes-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.recipes-text {
+    flex: 1; /* Make text take remaining space */
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px; /* Limit width for readability */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .recipes {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .recipes-image img {
+        width: 100%; /* Ensure the image fits the container */
+    }
+
+    .scenarios {
+        flex-direction: column;
     }
 }

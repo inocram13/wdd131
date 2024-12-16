@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kieth Marconi Acosta</title>
+    <meta name="description" content="Author: Kieth Marconi Acosta, WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kieth Marconi Acosta">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="scripts/recipe.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">LasaMundo</h1>
+            <p>LasaMundo is derived from the Philippine Language Tagalog: 
+                *lasa* means "flavor," and *mundo* means "world." 
+                We search for flavors across the globe, exploring diverse recipes from different nations.</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="recipe.html">Recipes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="story.html">Food Stories</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Discover Delicious Recipes</h2>
+                <p>LasaMundo aims to share recipes from all over the world, celebrating the unique flavors cultivated for generations.</p>
+                <p>Explore recipes from around the world, perfect for every occasion. Find inspiration for your next culinary adventure!</p>
+                <a href="recipe.html" class="btn">Browse Recipes</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/ramen.webp" alt="Delicious food" loading="lazy">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>Join Our Conversation</h2>
+                <p>What is your favorite childhood recipe?</p>
+                <p>Which cuisine are you excited to try next?</p>
+                <nav>
+                    <ul>
+                        <li><a href="story.html">Share your stories here</a></li>
+                    </ul>
+                </nav>
+        </section>
+        <!-- Popular Recipes Section -->
+        <section id="recipes" class="recipes-preview">
+            <h2>Popular Recipes</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <img src="images/adobo.webp" alt="Adobo">
+                    <h3>Adobo</h3>
+                    <p>A Filipino classic made with pork or chicken.</p>
+                    <a href="#" class="btn-small">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/tortangtalong.webp" alt="Tortang Talong">
+                    <h3>Tortang Talong</h3>
+                    <p>Grilled eggplant omelette, simple and delicious.</p>
+                    <a href="#" class="btn-small">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/sushi.webp" alt="Sushi">
+                    <h3>Sushi</h3>
+                    <p>Japanese vinegared rice with fresh fish.</p>
+                    <a href="#" class="btn-small">View Recipe</a>
+                </div>
+            </div>
+            <a href="#recipes" class="btn">View All Recipes</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have a recipe suggestion or feedback? We'd love to hear from you!</p>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        <section class="search-bar">
+            <input type="text" id="recipe-search" placeholder="Search for recipes...">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 😎Kieth Marconi Acosta😎 | Philippines</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/recipe.js"></script>
+</body>
+</html>

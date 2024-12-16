@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kieth Marconi Acosta</title>
+    <meta name="description" content="Author: Kieth Marconi Acosta, WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kieth Marconi Acosta">
+    <link rel="stylesheet" href="styles/story.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="scripts/recipe.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Recipe Master</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="story.html" class="active">Food Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="stories-section">
+            <div class="stories-container">
+                <h1>Food Stories</h1>
+                <p>
+                    Food is not just sustenance; it’s an experience, a memory, and a journey. Here, we share some of the most delightful and heartwarming stories from our community of food lovers. Dive into the tales of flavors that left a lasting impression, the first bite of something new, and the meals that brought people together.
+                </p>
+
+                <article class="story">
+                    <h2>Discovering Adobo for the First Time</h2>
+                    <p>
+                        "It was a rainy afternoon in Manila when I first tasted adobo. The tangy aroma of vinegar and soy sauce simmering with garlic filled the air. As I took my first bite, the tender chicken melted in my mouth, perfectly paired with steamed rice. That day, I not only discovered a dish but a culture rich in tradition and flavor." - Maria L.
+                    </p>
+                </article>
+
+                <article class="story">
+                    <h2>The Magic of Mochi</h2>
+                    <p>
+                        "My trip to Japan introduced me to mochi, a chewy rice cake that seemed simple but carried the sweetness of red bean paste within. Eating it at a temple during a festival made the experience magical. It wasn’t just a dessert; it was a connection to centuries of history and celebration." - Kenji T.
+                    </p>
+                </article>
+
+                <article class="story">
+                    <h2>Savoring Paella by the Spanish Coast</h2>
+                    <p>
+                        "On a sunlit afternoon in Valencia, I sat by the Mediterranean Sea, savoring my first authentic paella. The saffron-infused rice, fresh seafood, and crispy socarrat at the bottom of the pan created a symphony of flavors. It was a meal that embodied the essence of Spain." - Clara S.
+                    </p>
+                </article>
+
+                <article class="story">
+                    <h2>Sinigang: A Comforting Hug in a Bowl</h2>
+                    <p>
+                        "Growing up, sinigang was my family’s go-to comfort food. The sour tamarind broth, tender pork, and fresh vegetables brought warmth to our table. It wasn’t just a dish; it was a reminder of home and family bonds." - Miguel P.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="share-story">
+            <div class="form-container">
+                <h2>Share Your Food Story</h2>
+                <form action="submit_story.php" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="story-title">Story Title:</label>
+                    <input type="text" id="story-title" name="story_title" required>
+
+                    <label for="story">Your Story:</label>
+                    <textarea id="story" name="story" rows="5" required></textarea>
+
+                    <button type="submit">Submit Your Story</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 😎Kieth Marconi Acosta😎 | Philippines</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
